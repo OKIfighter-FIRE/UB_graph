@@ -17,3 +17,16 @@ list = [
 Graph.destroy_all
 Graph.create!(list)
 puts '体重の初期データ投入に成功しました！'
+
+list = [
+  { date: Date.new(2020, 1, 1), num: 60.3 },
+  { date: Date.new(2020, 1, 2), num: 61.1 },
+  { date: Date.new(2020, 1, 3), num: 60.8 },
+  { date: Date.new(2020, 1, 4), num: nil },
+  { date: Date.new(2020, 1, 5), num: 60.5 },
+  { date: Date.new(2020, 1, 6), num: 61.4 },
+]
+
+Profit.destroy_all
+Profit.create!(list)
+puts '利益額の初期データimport'
