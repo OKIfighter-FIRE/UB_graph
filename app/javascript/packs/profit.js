@@ -44,4 +44,3 @@ document.addEventListener('turbolinks:load', () => {
       options: lineChartOption
   })
 })
-グラフが横
