@@ -30,3 +30,16 @@ list = [
 Profit.destroy_all
 Profit.create!(list)
 puts '利益額の初期データimport'
+
+list = [
+  { age: 23, sex: 1 },
+  { age: 32, sex: 2 },
+  { age: 19, sex: 1 },
+  { age: 41, sex: 1 },
+  { age: 35, sex: 2 },
+  { age: 33, sex: 2 },
+]
+
+Customer.destroy_all
+Customer.create!(list)
+puts '顧客トレンドの初期データimport Done'
